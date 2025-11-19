@@ -1,36 +1,24 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+### Java / Maven
+**/target/
+**/out/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+### IntelliJ / VS Code / IDE
+.idea/
 .vscode/
+*.iml
 
-# fichiers locaux
+### Node / React / Vite
+**/node_modules/
+**/dist/
+**/.vite/
+
+### Logs & OS
+*.log
+.DS_Store
+
+### Fichiers locaux Backend
 Backend/src/main/resources/application-local.yml
+Backend/src/main/resources/application-*.local.yml
+
+### Fichiers locaux Docker (si un jour tu as des overrides)
+docker-compose.override.yml
