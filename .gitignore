@@ -1,24 +1,34 @@
-### Java / Maven
-**/target/
-**/out/
+########################
+# OS / fichiers temporaires
+########################
+.DS_Store
+Thumbs.db
 
-### IntelliJ / VS Code / IDE
-.idea/
+########################
+# IDE / outils
+########################
 .vscode/
+.idea/
 *.iml
+*.ipr
+*.iws
 
-### Node / React / Vite
+########################
+# Java / Maven (générique)
+########################
+**/target/
+*.log
+
+########################
+# Node / JS (au cas où)
+########################
 **/node_modules/
 **/dist/
-**/.vite/
 
-### Logs & OS
-*.log
-.DS_Store
-
-### Fichiers locaux Backend
+########################
+# Fichiers de configuration locaux / secrets
+########################
 Backend/src/main/resources/application-local.yml
-Backend/src/main/resources/application-*.local.yml
-
-### Fichiers locaux Docker (si un jour tu as des overrides)
-docker-compose.override.yml
+.env
+.env.local
+.env.*.local
