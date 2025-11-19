@@ -1,5 +1,4 @@
 services:
-
   database:
     container_name: database
     image: postgres:16.5
@@ -14,3 +13,6 @@ services:
       - database:/var/lib/postgresql/data
     healthcheck:
       test: "pg_isready -U quizapp"
+
+volumes:
+  database:
